@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".ScoreActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/team_name"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/score"
+        android:textSize="80dp" />
+
+    <Button
+        android:id="@+id/bnt_three"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="@string/score_three"
+        android:onClick="plus_three"/>
+    <Button
+        android:id="@+id/bnt_two"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/score_two"
+        android:onClick="plus_two"/>
+    <Button
+        android:id="@+id/bnt_one"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/score_one"
+        android:onClick="plus_one"/>
+    <Button
+        android:id="@+id/bnt_reset"
+        android:layout_width="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:text="@string/score_reset"
+        android:onClick="reset"/>
+</LinearLayout>

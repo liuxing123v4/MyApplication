@@ -4,16 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".MainActivity"
     android:background="@drawable/sweet_circle_food"
     >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="182dp"
-        android:layout_gravity="center"
-        android:text="@string/text_ne"
-
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="25dp"
+        android:text="Textview"
         />
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"/>
 </LinearLayout>
