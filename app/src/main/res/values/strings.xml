@@ -5,9 +5,14 @@
     <string name="input_hint">请输入摄氏温度：</string>
     <string name="button1">转化为华摄度：</string>
     <string name="team_name">TeamA</string>
+    <string name="team_nameb">TeamB</string>
     <string name="score">0</string>
     <string name="score_three">+3 POINTS</string>
     <string name="score_two">+2 POINTS</string>
     <string name="score_one">+1 POINTS</string>
     <string name="score_reset">RESET</string>
+    <string name="bnt_dollar_label">Dollar</string>
+    <string name="rmb_hint">input your name</string>
+    <string name="bnt_euro_label">Euro</string>
+    <string name="bnt_won_label">Won</string>
 </resources>
