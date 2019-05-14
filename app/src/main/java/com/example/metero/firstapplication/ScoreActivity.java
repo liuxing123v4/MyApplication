@@ -1,10 +1,9 @@
 package com.example.metero.firstapplication;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class ScoreActivity extends AppCompatActivity {
@@ -18,6 +17,47 @@ public class ScoreActivity extends AppCompatActivity {
 
         scorea = (TextView) findViewById(R.id.scorea);
         scoreb = (TextView) findViewById(R.id.scoreb);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        String scorea = ((TextView) findViewById(R.id.scorea)).getText().toString();
+        String scoreb = ((TextView) findViewById(R.id.scoreb)).getText().toString();
+
+        outState.putString("teama_score",scorea);
+        outState.putString("teamb_score",scoreb);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
     public void add_bnt3(View bnt){

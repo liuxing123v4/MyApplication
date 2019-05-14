@@ -19,7 +19,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -38,11 +38,11 @@
                 android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="@string/score"
-                android:textSize="80dp" />
+                android:textSize="80sp" />
 
             <Button
                 android:id="@+id/bnt_threea"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
@@ -51,8 +51,18 @@
                 android:text="@string/score_three" />
 
             <Button
+                android:id="@+id/bnt_onea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_orange_light"
+                android:onClick="add_bnt1"
+                android:text="@string/score_one" />
+
+            <Button
                 android:id="@+id/bnt_twoa"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
@@ -60,15 +70,6 @@
                 android:onClick="add_bnt2"
                 android:text="@string/score_two" />
 
-            <Button
-                android:id="@+id/bnt_onea"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@android:color/holo_orange_light"
-                android:onClick="add_bnt1"
-                android:text="@string/score_one" />
         </LinearLayout>
 
         <TextView
@@ -78,7 +79,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -98,17 +99,7 @@
                 android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="@string/score"
-                android:textSize="80dp" />
-
-            <Button
-                android:id="@+id/bnt_threeb"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:background="@android:color/holo_orange_light"
-                android:onClick="add_bnt3"
-                android:text="@string/score_three" />
+                android:textSize="80sp" />
 
             <Button
                 android:id="@+id/bnt_twob"
@@ -121,6 +112,16 @@
                 android:text="@string/score_two" />
 
             <Button
+                android:id="@+id/bnt_threeb"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/holo_orange_light"
+                android:onClick="add_bnt3"
+                android:text="@string/score_three" />
+
+            <Button
                 android:id="@+id/bnt_oneb"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
@@ -129,16 +130,17 @@
                 android:background="@android:color/holo_orange_light"
                 android:onClick="add_bnt1"
                 android:text="@string/score_one" />
+
         </LinearLayout>
     </LinearLayout>
 
     <Button
         android:id="@+id/bnt_reset"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:background="@android:color/holo_orange_light"
         android:layout_marginTop="40dp"
+        android:background="@android:color/holo_orange_light"
         android:onClick="reset"
         android:text="@string/score_reset" />
 
